@@ -1,0 +1,322 @@
+body {
+  max-width: 95%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  margin: auto;
+  background-color: white; }
+
+
+div {
+  
+  margin: auto; }
+
+
+.header {
+  max-width: 100%;
+  margin: auto;
+  height: 350px;
+  background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8)), url(images/header-pic.jpeg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative;
+
+
+ }
+  .header__logo {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin-bottom: 15px; }
+    .header__logo-pics {
+      height: 40px;
+     }
+  .header__company {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header__company-name {
+      font-weight: 700;
+      font-size: 50px;
+      letter-spacing: 30px;
+      animation-name: header__companyName;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+  .header__slogan {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 11px;
+    animation-name: slogan;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+
+.birthday {
+  max-width: 100%;
+  margin: auto; }
+
+.lifestyle {
+  max-width: 100%;
+  margin: auto; }
+
+.wedding {
+  max-width: 100%;
+  margin: auto; }
+
+.kids {
+  max-width: 100%;
+  margin: auto; }
+
+.family {
+  max-width: 100%;
+  margin: auto; }
+
+.btn-div {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px; }
+  .btn-div__btn {
+    color: white;
+    background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+    padding: 10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+  }
+    .btn-div__btn:hover {
+      background-color: #180f0f;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .btn-div__btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.lifestyle-pics {
+  max-width: 100%;
+  margin: auto; }
+  .lifestyle-pics__photo {
+    width: 49.5%;
+
+  }
+
+.birthday-pics {
+  max-width: 100%;
+  margin: auto; }
+  .birthday-pics__photo {
+    width: 49.5%; 
+   
+  }
+
+.wedding-pics {
+  max-width: 100%;
+  margin: auto; }
+  .wedding-pics__photo {
+    width: 49.5%;
+   
+  }
+
+.kids-pics {
+  max-width: 100%;
+  margin: auto; }
+  .kids-pics__photo {
+    width: 49.5%; 
+
+  }
+    
+
+.family-pics {
+  max-width: 100%;
+  margin: auto; }
+  .family-pics__photo {
+    width: 49.5%; 
+
+  }
+    .last-section{
+      background-color: white;
+      display: inline-block;
+    }
+    .slogan-secondary-div {
+      text-align: center;
+     
+    }
+    .slogan-secondary-div__text {
+      font-size: 2.5rem;
+      display: inline-block;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right, #d8cca3cc, #b09b71cc ); 
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all .2s;
+      
+    }
+    
+    .slogan-secondary-div__text:hover {
+      transform: skewY(2deg) skewX(2deg);
+      text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  
+    }
+   
+   .row {
+    max-width: 100%;
+    margin: auto; 
+    }
+ 
+
+    .col-1-of-2 {
+      width: 60%;
+      margin: auto;
+    }
+   
+    
+    .asaba-photography{
+      margin-bottom: 2rem;
+      color:   #b09b71cc ;
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+    .col-2{
+      position: relative;
+
+    }
+   
+    .pics {
+      margin-top: 2rem;
+      margin-bottom: 3.5rem;
+      width: 55%;
+      height: auto;
+      box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      z-index: 10;
+      transition: all .2s;
+      outline-offset: 1rem;
+    }
+    .pics:hover {
+      outline: 1rem solid #472D2D;
+      box-shadow: 0 4rem 5rem rgba(0, 0, 0, 0.4);
+      transform: scale(1.05);
+      z-index: 20;
+    }
+    .p-1 {
+      position: absolute;
+      left: 0.3rem;
+      top: 0;
+    }
+    .p-2 {
+      position: absolute;
+      right: 0.3rem;
+      top: 2rem;
+    }
+
+    img {
+      border-radius: .4rem;
+    }
+ 
+    .menu {
+      margin: auto;
+      max-width: 50%; 
+      text-align: center; 
+    }
+    h4 {
+      font-size: 1.6rem;
+      text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      
+    }
+    .portfolio {
+     
+      transition: all .2sec;
+    }
+    .last-p {
+      margin-top: 1.5rem;
+      text-shadow:0 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+    .portfolio:hover,
+    .portfolio:active {
+      display: inline-block;
+      transform: scale(1.02);
+      padding: .2rem 1rem;
+      background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) ) ;
+      border-radius: .8rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+    }
+    .contact-me {
+      margin: auto;
+      max-width: 50%; 
+      text-align: center; 
+      margin-bottom: 5rem;
+    }
+    .contact-me__text {
+      display: inline-block;
+    }
+    .get-in-touch {
+      font-size: 1.6rem;
+      text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+    .link-ig {
+      font-size: 1.3rem;
+      color: black;
+      margin-bottom: 2rem;
+    }
+    .link-ig:hover {
+      padding:0.2rem 1rem ;
+      background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+      border-radius: 10px;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+
+    }
+    .shutter-ig {
+      width: 100%;
+      border-radius: 5px ;
+    }
+    .shutter-ig:hover {
+      padding:0.2rem 1rem ;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+
+    .copyright{
+      text-align: center;
+      background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+      
+    }
+    .copyright__text {
+      display: inline-block;
+      color: black;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+@keyframes header__companyName {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slogan {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    opacity: 0.5;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
