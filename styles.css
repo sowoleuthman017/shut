@@ -17,7 +17,7 @@ div {
   max-width: 100%;
   margin: auto;
   height: 350px;
-  background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8)), url(images/header-pic.jpeg);
+  background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8)), url(header-pic.jpeg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
@@ -82,8 +82,10 @@ div {
   padding: 10px; }
   .btn-div__btn {
     color: white;
-    background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+    background-color: #472D2D;
     padding: 10px 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 100px;
     text-decoration: none;
     text-transform: uppercase;
@@ -155,10 +157,12 @@ div {
       -webkit-background-clip: text;
       color: transparent;
       transition: all .2s;
+      text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       
     }
     
-    .slogan-secondary-div__text:hover {
+    .slogan-secondary-div__text:hover,
+    .slogan-secondary-div__text:active {
       transform: skewY(2deg) skewX(2deg);
       text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   
@@ -177,12 +181,15 @@ div {
    
     
     .asaba-photography{
+      font-size: 1.85rem;
       margin-bottom: 2rem;
-      color:   #b09b71cc ;
+      color:  #b09b71cc ;
     }
     p {
-      font-size: 1.3rem;
-      line-height: 1.4;
+      color: black;
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.3;
     }
     .col-2{
       position: relative;
@@ -219,6 +226,15 @@ div {
 
     img {
       border-radius: .4rem;
+      transition: all .1s;
+      z-index: 10;
+      outline-offset: .5rem;
+    }
+    img:active {
+      transform: scale(1.05);
+      z-index: 20;
+      border-radius: 20px;
+      outline: .5rem solid #d8cca3cc;
     }
  
     .menu {
@@ -227,7 +243,7 @@ div {
       text-align: center; 
     }
     h4 {
-      font-size: 1.6rem;
+      font-size: 1.85rem;
       text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     }
     a {
@@ -236,8 +252,11 @@ div {
       
     }
     .portfolio {
-     
+      display: inline-block;
+      padding: .5rem 1rem;
+      background-color: #b09b71cc; 
       transition: all .2sec;
+      border-radius: 20px;
     }
     .last-p {
       margin-top: 1.5rem;
@@ -262,17 +281,21 @@ div {
       display: inline-block;
     }
     .get-in-touch {
-      font-size: 1.6rem;
+      font-size: 1.85rem;
       text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     }
     .link-ig {
       font-size: 1.3rem;
       color: black;
       margin-bottom: 2rem;
+      padding: .2rem  .8rem;
+      border-radius: 10px;
+      background-color:  #b09b71cc;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     }
     .link-ig:hover {
       padding:0.2rem 1rem ;
-      background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+      background-color: $color-btn: #472D2D;
       border-radius: 10px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 
@@ -282,6 +305,7 @@ div {
       border-radius: 5px ;
     }
     .shutter-ig:hover {
+      
       padding:0.2rem 1rem ;
       background-color: white;
       border-radius: 10px;
