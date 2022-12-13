@@ -7,38 +7,7 @@ body {
   margin: auto;
   background-color: white;
 }
-@media (max-width: 900px) {
-    .pic-res {
-      width: 49%;
-      height: auto;
-    }
-    #res-pic {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    .family-pics__photo {
-      width: 75%;
-      margin: auto; 
-    }
-    .kids-pics__photo {
-      width: 75%;
-      margin: auto; 
-    }
-    .wedding-pics__photo {
-      width: 75%;
-      margin: auto;  
-    }  
-    .birthday-pics__photo {
-      width: 75%;
-      margin: auto;  
-    }
-    .lifestyle-pics__photo {
-      width: 75%;
-      margin: auto; 
-    }
-  
-}
+
 
 .pic-res {
   width: 24.5%;
