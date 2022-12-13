@@ -5,14 +5,96 @@ body {
   line-height: 1.7;
   color: #777;
   margin: auto;
-  background-color: white; }
-
-
-div {
+  background-color: white;
+}
+@media (max-width: 900px) {
+    .pic-res {
+      width: 49%;
+      height: auto;
+    }
+    #res-pic {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .family-pics__photo {
+      width: 75%;
+      margin: auto; 
+    }
+    .kids-pics__photo {
+      width: 75%;
+      margin: auto; 
+    }
+    .wedding-pics__photo {
+      width: 75%;
+      margin: auto;  
+    }  
+    .birthday-pics__photo {
+      width: 75%;
+      margin: auto;  
+    }
+    .lifestyle-pics__photo {
+      width: 75%;
+      margin: auto; 
+    }
   
-  margin: auto; }
+}
 
+.pic-res {
+  width: 24.5%;
+  height: auto;
+}
+.navigation__checkbox {
+  display: none;
+}
+.navigation__label{
+  height: 6rem;
+  width: 6rem;
+  background-color: rgba(176, 155, 113, 1);
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1500;
+}
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  background-color: rgba(176, 155, 113, 1);
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1000;
+}
 
+.navigation__nav {
+  height: 100vh;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  right: 2.5%;
+  background-color: white;
+  z-index: 900;
+  opacity: 0; 
+  display: inline-block;
+}
+
+.navigation__list {
+  list-style: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: white;
+  margin: 1rem ;
+  padding: .3rem .8rem;
+  background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) ) ;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skewX(15deg);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+ 
+ 
+
+}
 .header {
   max-width: 100%;
   margin: auto;
@@ -22,9 +104,11 @@ div {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative;
+  }
 
 
- }
+
+ 
   .header__logo {
     display: inline-block;
     position: absolute;
@@ -34,6 +118,7 @@ div {
     .header__logo-pics {
       height: 40px;
      }
+    
   .header__company {
     color: white;
     position: absolute;
@@ -42,19 +127,20 @@ div {
     transform: translate(-50%, -50%); }
     .header__company-name {
       font-weight: 700;
-      font-size: 50px;
-      letter-spacing: 30px;
+      font-size: 60px;
+      letter-spacing: 10px;
       animation-name: header__companyName;
       animation-duration: 1s;
       animation-timing-function: ease-out; }
+    
   .header__slogan {
     font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 11px;
+    font-size: 35px;
+    letter-spacing: 6px;
     animation-name: slogan;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-
+   
 .birthday {
   max-width: 100%;
   margin: auto; }
@@ -65,7 +151,9 @@ div {
 
 .wedding {
   max-width: 100%;
-  margin: auto; }
+  margin: auto; 
+  display: inline;
+}
 
 .kids {
   max-width: 100%;
@@ -106,7 +194,6 @@ div {
   margin: auto; }
   .lifestyle-pics__photo {
     width: 49.5%;
-
   }
 
 .birthday-pics {
@@ -114,25 +201,19 @@ div {
   margin: auto; }
   .birthday-pics__photo {
     width: 49.5%; 
-   
   }
 
 .wedding-pics {
   max-width: 100%;
   margin: auto; }
   .wedding-pics__photo {
-    width: 49.5%;
-   
+    width: 49.5%; 
   }
 
 .kids-pics {
   max-width: 100%;
   margin: auto; }
-  .kids-pics__photo {
-    width: 49.5%; 
 
-  }
-    
 
 .family-pics {
   max-width: 100%;
@@ -204,11 +285,11 @@ div {
       box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.5);
       border-radius: 4px;
       z-index: 10;
-      transition: all .2s;
+      transition: all .01s;
       outline-offset: 1rem;
     }
     .pics:hover {
-      outline: 1rem solid #472D2D;
+      outline: .3rem solid rgba(176, 155, 113, 0.9);
       box-shadow: 0 4rem 5rem rgba(0, 0, 0, 0.4);
       transform: scale(1.05);
       z-index: 20;
@@ -295,7 +376,7 @@ div {
     }
     .link-ig:hover {
       padding:0.2rem 1rem ;
-      background-color: $color-btn: #472D2D;
+      background-color: #472D2D;
       border-radius: 10px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 
@@ -303,13 +384,12 @@ div {
     .shutter-ig {
       width: 100%;
       border-radius: 5px ;
+      transition: all .2s;
+      outline:0.3rem solid  rgba(176, 155, 113, 0.9);
     }
     .shutter-ig:hover {
-      
-      padding:0.2rem 1rem ;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: scale(1.02);
+       
     }
 
     .copyright{
@@ -322,6 +402,11 @@ div {
       color: black;
       margin-top: 2rem;
       margin-bottom: 2rem;
+    }
+
+   
+    footer {
+      max-width: 100%;
     }
 @keyframes header__companyName {
   0% {

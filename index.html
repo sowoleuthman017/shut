@@ -1,14 +1,35 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Shuttercrib 🎥 </title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="shutterfavicon.ico">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Shuttercrib</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="shutterfavicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-togggle">
+      <label for="navi-toggle" class="navigation__label"> NAV</label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav" >
+        <ul>
+          <li class="navigation__list"> HomePage </li>
+          <li class="navigation__list"> wedding/couples portraits </li>
+          <li class="navigation__list"> lifestyles portraits</li>
+          <li class="navigation__list"> Birthday Portraits</li>
+          <li class="navigation__list"> Family Portraits</li>
+          <li class="navigation__list"> Kids POrtraits</li>
+          <li class="navigation__list"> Book Shuttercrib</li>
+        </ul>
+      </nav>
+      
+    </div>
   
     <header class="header">
       <div class="header__logo">
@@ -20,17 +41,18 @@
         <h2 class="header__slogan"> Make You Look Good Factory </h2>
       </div>
     </header>
+
     <div class="wedding">
       <div class="wedding__div1">
-        <img src="wedding1.jpg" alt="wedding1" width="33%">
-        <img src="wedding9.jpg" alt="wedding2" width="33%">
-        <img src="wedding17.jpg" alt="wedding3" width="33%">
+        <img class="pic-res" src="wedding1.jpg" alt="wedding1" >
+        <img class="pic-res" src="wedding9.jpg" alt="wedding2" >
+        <img id="res-pic" class="pic-res" src="wedding15.jpg" alt="wedding4" >
+        <img id="res-pic" class="pic-res" src="wedding19.jpg" alt="wedding27" >
+        
       </div>
 
       <div class="wedding__div2">
-        <img src="wedding15.jpg" alt="wedding4" width="33%">
-        <img src="wedding19.jpg" alt="wedding27" width="33%">
-        <img src="wedding21.jpg" alt="wedding7" width="33%">
+        
       </div>
     </div>
     <div class="btn-div">
@@ -38,15 +60,15 @@
       </div>
     <div class="lifestyles">
       <div class="lifestyles__div1">
-        <img src="lifestyle16.jpg" alt="lifestyles1" width="33%">
-        <img src="lifestyle10.jpg" alt="lifestyles2" width="33%">
-        <img src="lifestyle3.jpg" alt="lifestyles3" width="33%">
+        <img class="pic-res" src="lifestyle16.jpg" alt="lifestyles1" >
+        <img class="pic-res" src="lifestyle10.jpg" alt="lifestyles2" >
+        <img id="res-pic" class="pic-res" src="lifestyle4.jpg" alt="lifestyles4" >
+        <img id="res-pic" class="pic-res" src="lifestyle22.jpg" alt="lifestyles27" >
       </div>
 
       <div class="lifestyles__div2">
-        <img src="lifestyle4.jpg" alt="lifestyles4" width="33%">
-        <img src="lifestyle22.jpg" alt="lifestyles27" width="33%">
-        <img src="lifestyle7.jpg" alt="lifestyles7" width="33%">
+        
+       
       </div>
     </div>
     <div class="btn-div">
@@ -54,14 +76,15 @@
       </div>
     <div class="birthday">
       <div class="birthday__div1">
-        <img src="birthday8.jpg" alt="birthday8" width="33%">
-        <img src="birthday12.jpg" alt="birthday7" width="33%">
-        <img src="birthday10.jpg" alt="birthday9" width="33%">
+        <img class="pic-res" src="birthday8.jpg" alt="birthday8" >
+        <img class="pic-res" src="birthday12.jpg" alt="birthday7" >
+        <img id="res-pic" class="pic-res" src="birthday2.jpg" alt="birthday1" >
+        <img id="res-pic" class="pic-res" src="birthday5.jpg" alt="birthday" >
+        
       </div>
       <div class="birthday__div">
-        <img src="birthday2.jpg" alt="birthday1" width="33%">
-        <img src="birthday5.jpg" alt="birthday" width="33%">
-      <img src="birthday2.jpg" alt="birthday13" width="33%">
+  
+   
       </div>
     </div>
     <div class="btn-div">
@@ -69,14 +92,14 @@
     </div>
     <div class="kids"> 
       <div class="kids__div1">
-        <img src="kids4.jpg" alt="kids8" width="33%">
-        <img src="kids16.jpg" alt="kids7" width="33%">
-        <img src="kids20.jpg" alt="kids9" width="33%">
+        <img class="pic-res" src="kids4.jpg" alt="kids8" >
+        <img class="pic-res" src="kids16.jpg" alt="kids7" >
+        <img id="res-pic" class="pic-res" src="kids2.jpg" alt="kids1" >
+        <img id="res-pic" class="pic-res" src="kids5.jpg" alt="kids" >
       </div>
       <div class="kids__div">
-        <img src="kids2.jpg" alt="kids1" width="33%">
-        <img src="kids5.jpg" alt="kids" width="33%">
-      <img src="kids2.jpg" alt="kids13" width="33%">
+    
+    
       </div>
     </div>
     <div class="btn-div">
@@ -85,14 +108,14 @@
 
       <div class="family"> 
         <div class="family__div1">
-          <img src="family1.jpg" alt="family8" width="33%">
-          <img src="family3.jpg" alt="family7" width="33%">
-          <img src="family14.jpg" alt="family9" width="33%">
+          <img class="pic-res" src="family1.jpg" alt="family8" >
+          <img class="pic-res" src="family3.jpg" alt="family7" >
+          <img id="res-pic" class="pic-res" src="family7.jpg" alt="family1" >
+          <img id="res-pic" class="pic-res" src="family9.jpg" alt="family" >
         </div>
         <div class="family__div">
-          <img src="family7.jpg" alt="family1" width="33%">
-          <img src="family9.jpg" alt="family" width="33%">
-        <img src="family11.jpg" alt="family13" width="33%">
+       
+        
         </div>
       </div>
       <div class="btn-div">
@@ -144,9 +167,11 @@
             <a href=" https://www.instagram.com/shuttercrib/ ">  <img class="shutter-ig" src="shutter-ig.jpg" alt=""> </a> 
           </div>
 
-          <div class="copyright">
-            <p  class="copyright__text"> All Content Copyright © 2022 SHUTTERCRIB Photography</p>
-          </div>
-
+          
   </body>
+  <footer>
+    <div class="copyright">
+      <p  class="copyright__text"> All Content Copyright © 2022 SHUTTERCRIB Photography</p>
+    </div>
+  </footer>
 </html>
