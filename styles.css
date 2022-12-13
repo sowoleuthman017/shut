@@ -9,12 +9,18 @@ body {
 }
 
 
+
 .pic-res {
-  width: 24.5%;
+  width: 33%;
   height: auto;
 }
 .navigation__checkbox {
   display: none;
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 60%;
+  opacity: 1;
+
 }
 .navigation__label{
   height: 6rem;
@@ -25,45 +31,45 @@ body {
   right: 3rem;
   z-index: 1500;
 }
-.navigation__background {
-  height: 6rem;
-  width: 6rem;
-  background-color: rgba(176, 155, 113, 1);
-  position: fixed;
-  top: 3rem;
-  right: 3rem;
-  z-index: 1000;
-}
 
 .navigation__nav {
   height: 100vh;
-  width: 40%;
+  width: 0;
   position: fixed;
   top: 0;
   right: 2.5%;
-  background-color: white;
+  background-image: radial-gradient(rgba(216, 204, 163, 1), rgba(176, 155, 113, 1));
   z-index: 900;
   opacity: 0; 
   display: inline-block;
+  transition: all .8s;
 }
+
 
 .navigation__list {
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   display: inline-block;
-  color: white;
-  margin: 1rem ;
-  padding: .3rem .8rem;
-  background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) ) ;
+  color: black;
+  margin: 2rem ;
+  padding: .2rem .6rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50% ) ;
+  background-size: 150%;
   text-align: center;
   text-transform: uppercase;
-  transform: skewX(15deg);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-
- 
- 
-
+  transition: all .4s;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
+
+.navigation__list:hover,
+.navigation__list:active{
+  background-position: 100%;
+  color: black;
+  transform: translateX(1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
 .header {
   max-width: 100%;
   margin: auto;
@@ -182,6 +188,9 @@ body {
 .kids-pics {
   max-width: 100%;
   margin: auto; }
+  .kids-pics__photo{
+    width: 49.5%;
+  }
 
 
 .family-pics {
