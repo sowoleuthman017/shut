@@ -12,9 +12,14 @@ li {
   list-style: none;
   margin: 1rem;
   font-size: 1.6rem;
-  text-decoration: underline;
+  
 }
-
+.get {
+  color: black;
+ 
+  
+  text-shadow: 0 1rem 2rem rgba(176, 155, 113, 0.8);
+}
 .pic-res {
   width: 33%;
   height: auto;
@@ -30,10 +35,11 @@ li {
 .navigation__label{
   height: 6rem;
   width: 6rem;
-  background-color: rgba(176, 155, 113, 1);
+  background-image: radial-gradient(rgba(176, 155, 113, 1), rgba(71, 45, 45, 0.8));
   position: fixed;
   top: 3rem;
   right: 3rem;
+  border-radius: 50%;
   z-index: 1500;
 }
 
@@ -341,9 +347,30 @@ li {
     }
     .contact-me {
       margin: auto;
-      max-width: 50%; 
+      max-width: 100%; 
       text-align: center; 
       margin-bottom: 5rem;
+      background-image:linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8)), url(header-pic.jpeg); ;
+      background-size: cover;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      transform: skewX(10deg);
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+    .contact-me__div {
+      margin: auto;
+      max-width: 50%;
+      
+    }
+    .get-div {
+      transform: skewX(-10deg);
+    }
+    .ig-link {
+      text-decoration: underline;
+      color: darkblue;
+    }
+    .ig-link:hover {
+      color: black;
     }
     .contact-me__text {
       display: inline-block;
@@ -376,7 +403,7 @@ li {
       margin-top: 3rem;
       transition: all .2s;
       outline:0.3rem solid  rgba(176, 155, 113, 0.9);
-      transform: scale(1.02);
+      transform: scale(1.02) ;
     }
     .shutter-ig:hover {
       transform: scale(1.03);
@@ -386,6 +413,7 @@ li {
     .copyright{
       text-align: center;
       background-image: linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8) );
+      padding-bottom: 1rem;
       
     }
     .copyright__text {
@@ -397,6 +425,7 @@ li {
 
    
     footer {
+      margin-top: 2rem;
       max-width: 100%;
     }
 @keyframes header__companyName {
