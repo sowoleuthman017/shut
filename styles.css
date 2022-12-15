@@ -21,7 +21,7 @@ li {
   text-shadow: 0 1rem 2rem rgba(176, 155, 113, 0.8);
 }
 .pic-res {
-  width: 33%;
+  max-width: 33%;
   height: auto;
 }
 .navigation__checkbox {
@@ -41,14 +41,60 @@ li {
   right: 3rem;
   border-radius: 50%;
   z-index: 1500;
+  text-align: center;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 3rem;
+}
+.navigation__icon,
+.navigation__icon::after,
+.navigation__icon::before {
+  width:3rem;
+  height: 2px;
+  background-color: black;
+  display: inline-block;  
+  
+}
+.navigation__icon::after,
+.navigation__icon::before {
+  content: "";
+  position: absolute;
+  transition: all .2s;
+}
+.navigation__icon::before{
+  left: 0;
+  top: -.8rem
+}
+.navigation__icon::after{
+  left: 0;
+  top: .8rem
 }
 
-.navigation__nav {
+.navigation__label:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__label:hover .navigation__icon::after {
+  top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation__checkbox:checked + .navigation__label .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.navigation__nav { 
   height: 100vh;
   width: 0;
   position: fixed;
   top: 0;
-  right: 2.5%;
+  right: 0;
   background-image: radial-gradient(rgba(216, 204, 163, 1), rgba(176, 155, 113, 1));
   z-index: 900;
   opacity: 0; 
@@ -308,7 +354,7 @@ li {
     }
  
     .menu {
-      margin: auto;
+      margin: 3.5rem auto;
       max-width: 50%; 
       text-align: center; 
     }
@@ -346,15 +392,15 @@ li {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4)
     }
     .contact-me {
-      margin: auto;
+      margin: 3.5rem auto;
       max-width: 100%; 
       text-align: center; 
       margin-bottom: 5rem;
       background-image:linear-gradient(to right, rgba(216, 204, 163, 0.8), rgba(176, 155, 113, 0.8)), url(header-pic.jpeg); ;
-      background-size: cover;
+      background-size: 100%;
       padding-bottom: 5rem;
       padding-top: 5rem;
-      transform: skewX(10deg);
+      transform: skewX(5deg) skewY(3deg);
       box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.4);
     }
     .contact-me__div {
@@ -363,7 +409,7 @@ li {
       
     }
     .get-div {
-      transform: skewX(-10deg);
+      transform: skewX(-5deg) skewY(-3deg);
     }
     .ig-link {
       text-decoration: underline;
@@ -419,13 +465,11 @@ li {
     .copyright__text {
       display: inline-block;
       color: black;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
     }
 
    
     footer {
-      margin-top: 2rem;
+      margin-top: 10rem;
       max-width: 100%;
     }
 @keyframes header__companyName {
