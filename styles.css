@@ -460,6 +460,10 @@ li {
       display: inline-block;
       color: black;
     }
+   #book {
+    color: black;
+    font-weight: bold;
+   }
 
    .form-section {
       text-align: center;
@@ -473,8 +477,8 @@ li {
    }
    .form-label {
     display: inline-block;
-    color: grey;
-    font-size: 1.4rem;
+    color: black;
+    font-size: 1.5rem;
     font-weight: bold;
    }
   .form-input {
@@ -484,7 +488,7 @@ li {
     border: 0;
     font-size: 1.2rem;
     border-radius: 5px;
-    width:40% ;
+    width:43% ;
     padding: .5rem 1.5rem;
     
   }
