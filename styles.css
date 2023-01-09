@@ -30,7 +30,6 @@ li {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 60%;
   opacity: 1;
-
 }
 .navigation__label{
   height: 6rem;
@@ -137,10 +136,6 @@ li {
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative;
   }
-
-
-
- 
   .header__logo {
     display: inline-block;
     position: absolute;
@@ -288,14 +283,13 @@ li {
     max-width: 100%;
     margin: auto; 
     }
- 
+  
 
     .col-1-of-2 {
       width: 60%;
       margin: auto;
     }
-   
-    
+ 
     .asaba-photography{
       font-size: 1.85rem;
       margin-bottom: 2rem;
@@ -467,10 +461,52 @@ li {
       color: black;
     }
 
-   
+   .form-section {
+      text-align: center;
+      background-image:  radial-gradient(rgba(216, 204, 163, 1), rgba(176, 155, 113, 1)); ;
+   }
+   form {
+    display: inline-block;
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+   }
+   .form-label {
+    display: inline-block;
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: bold;
+   }
+  .form-input {
+    display: inline-block;
+    margin-bottom: 2rem;
+    background-color: white;
+    border: 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width:40% ;
+    padding: .5rem 1.5rem;
+    
+  }
+  .form-button {
+    margin-top: 1.5rem;
+    background-image: linear-gradient(120deg,  #b09b71cc 0%,  #b09b71cc 50%, white 50% );
+    background-size: 150%;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
     footer {
       margin-top: 10rem;
       max-width: 100%;
+    }
+    #hidden {
+      animation-name: header__companyName;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
     }
 @keyframes header__companyName {
   0% {
