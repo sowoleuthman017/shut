@@ -471,14 +471,14 @@ li {
    }
    form {
     display: inline-block;
-    width: 60%;
+    width: 80%;
     padding: 2rem;
     margin: auto;
    }
    .form-label {
     display: inline-block;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
    }
   .form-input {
