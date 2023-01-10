@@ -167,7 +167,7 @@
                     <br>
                     <textarea class="form-input" name="" id="eventdetails" placeholder="Your event details and message" cols="30" rows="10"></textarea>
                     <br>
-                     <button class="form-button" type="submit"> Submit </button>
+                    <button onsubmit="sendEmail(); reset(); return false;"  class="form-button" type="submit"> Submit </button>
                    <p id="hidden"></p>
                   </form>
           </section>
@@ -204,8 +204,7 @@
             <a href=" https://www.instagram.com/shuttercrib/ ">  <img class="shutter-ig" src="shutter-ig.jpg" alt=""> </a> 
           </div>
           <script src="https://smtpjs.com/v3/smtp.js"></script>
-          <script src="index.js"></script>
-          
+          <script src="index.js"></script>         
   </body>
   <footer>
     <div class="copyright">

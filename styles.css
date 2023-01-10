@@ -489,9 +489,10 @@ li {
     font-size: 1.2rem;
     border-radius: 5px;
     width:43% ;
-    padding: .5rem 1.5rem;
-    
+    padding: .5rem 1.5rem; 
+    box-shadow: rgba(0, 0, 0, 0.7);
   }
+  
   .form-button {
     margin-top: 1.5rem;
     background-image: linear-gradient(120deg,  #b09b71cc 0%,  #b09b71cc 50%, white 50% );
@@ -501,6 +502,10 @@ li {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
+    transition: all .5s;
+  }
+  .form-button:active {
+    background-position: 100%;
   }
  
     footer {
